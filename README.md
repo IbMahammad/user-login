@@ -1,2 +1,43 @@
-# user-login
-User Login Functionality
+**User Login API**  
+
+This is a Django-based API for user authentication, including registration and login functionality.  
+
+### **Features**  
+- User registration  
+- User login  
+- Token-based authentication (if implemented)  
+- Password hashing for security  
+
+### **Installation**  
+1. Make sure you have Python and pip installed.  
+2. Install the required dependencies by running the following command:  
+
+   ```sh
+   pip install -r requirements.txt
+   ```  
+
+### **Database Setup**  
+Before running the project, you need to apply migrations to set up the database. Run these commands:  
+
+   ```sh
+   python manage.py makemigrations  
+   python manage.py migrate  
+   ```  
+
+### **Running the Server**  
+After setting up the database, you can start the Django development server with this command:  
+
+   ```sh
+   python manage.py runserver  
+   ```  
+
+Once the server is running, you can access it at `http://127.0.0.1:8000/`.  
+
+### **API Endpoints**  
+- To register a new user, send a **POST** request to `/api/register/`.  
+- To log in, send a **POST** request to `/api/login/`.  
+- To get user details, send a **GET** request to `/api/user/`.  
+
+### **Notes**  
+- Make sure to configure your database settings in `settings.py`.  
+
